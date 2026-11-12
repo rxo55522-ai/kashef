@@ -65,9 +65,9 @@ flowchart LR
 
 | Table | Purpose |
 |---|---|
-| `reviews` | One reviewed document: title, original text, final text, language, score, timestamps |
-| `issues` | Errors logged against a review: category, quoted text, note |
-| score cache | Paragraph hash → median score, so identical text always gets the same result |
+| `reviews` | One reviewed document: employee, title, original text, language, AI score, final text, timestamps |
+| `issues` | Errors logged against a review (`kind`, `excerpt`, `note`), deleted with the review |
+| `paragraph_scores` | Paragraph hash → median score and reason, so identical text always gets the same result |
 
 ## 8. Security Considerations
 
