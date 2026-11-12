@@ -1,0 +1,6 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>كاشف</title>
+{% include "_style.html" %}
+<style>body{display:grid;place-items:center;min-height:100vh;padding:16px}form{background:var(--sheet);padding:2rem;width:min(380px,100%);border-top:6px solid var(--plan)}h1{font-family:Amiri,serif;font-size:2.2rem;margin-bottom:1rem}.btn{width:100%;margin-top:1rem}.err{margin-bottom:1rem}</style></head>
+<body><form method="post"><h1>كاشف</h1>{% if error %}<p class="err">{{error}}</p>{% endif %}
+<label for="p">كلمة الدخول</label><input id="p" type="password" name="password" autofocus required>
+<button class="btn">دخول</button></form></body></html>
